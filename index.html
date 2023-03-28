@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenno Sherliick - Trader</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="/assets/js/javascript.js" defer></script>
+    
+</head>
+<body class="bg1">
+    <header class="navigation">
+     <a href="#">CONTATOS</a>
+     <a href="#">SOBRE</a>
+     <a href="#">SINAIS</a>
+     <a href="#">AJUDA</a>
+    </header>
+
+    <div class="title">
+        <h1>BRENNO</h1>
+        <h2>SHERLIICK</h2>
+        <h3>TRADER</h3>
+        <h4>Conquiste A Liberdade Financeira</h4>
+    </div>
+
+    <div class="button">
+        <button class="btn">SAIBA MAIS</button>
+    </div>
+
+
+    <div class="telegram">
+        <h1>Telegram</h1>
+        <img src="/assets/img/icons8-telegram-app 1.svg">
+    </div>
+
+
+    <div class="background-contagem">
+        <h1>AS VAGAS ENCERRAM EM:</h1>
+    </div>
+
+
+ <div>
+    <div class="dias-contagem" id="days"></div>
+    <div class="horas-contagem" id="hours"></div>
+    <div class="minutos-contagem" id="minutes"></div>
+    <div class="segundos-contagem" id="seconds"></div>
+  </div>
+
+  <script>
+    // Defina a data final da contagem regressiva
+    var countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
+
+    // Atualize a contagem regressiva a cada segundo
+    var x = setInterval(function() {
+
+      // Obtenha a data atual
+      var now = new Date().getTime();
+
+      // Calcule a diferença entre a data final e a data atual
+      var distance = countDownDate - now;
+
+      // Calcule dias, horas, minutos e segundos restantes
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Exiba a contagem regressiva nos elementos com os IDs "days", "hours", "minutes" e "seconds"
+      document.getElementById("days").innerHTML = days + " dias";
+      document.getElementById("hours").innerHTML = hours + " horas";
+      document.getElementById("minutes").innerHTML = minutes + " minutos";
+      document.getElementById("seconds").innerHTML = seconds + " segundos";
+
+      // Se a contagem regressiva acabar, exiba uma mensagem
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "CRUZEIRO É MAIOR TIME do mundo";
+        document.getElementById("hours").innerHTML = "";
+        document.getElementById("minutes").innerHTML = "";
+        document.getElementById("seconds").innerHTML = "";
+      }
+    }, 1000);
+  </script>
+
+
+<!-- INICIO SESSÃO BACKGROUND E EXPLICAÇÕES -->
+
+<div class="div-text1" style="width: 768px; height: 878px; left: -30px; display:inline-flex; flex-direction: row; align-items: flex-end; justify-content: flex-end;">
+  <div class="div-text" style="width: 860px; height: 100%; border-radius: 20px; position: absolute;">
+      <div style="width: 756px; height: 900px; left: 176px; top: 40px; position: absolute; background-color: rgba(41.50, 46.14, 47.81, 1); border-radius: 20px;"/>
+      <p class="texto-p" style="width: 676px; height: 111px; left: 60px; top: 573px; position: absolute; font-size: 20px; line-height: 100%; text-align: center;">Com técnica, planejamento e o comportamento certo,<br/>é praticamente impossível você não ser um trader<br/>profissional com ganhos até 10 mil reais por mês.  </p>
+      <p class="texto-p1" style="width: 585px; height: 78px; left: 100px; top: 51px; position: absolute; font-size: 24px; font-weight: 700; line-height: 100%; text-align: center; color: white;">Por que muitas pessoas perdem dinheiro no<br/>trader? </p>
+      <p class="texto-p2" style="width: 722px; height: 73px; left: 29px; top: 150px; position: absolute; font-size: 20px; line-height: 100%; text-align: center; color: white;">É simples responder isso: Porque elas não tem preparação<br/>para operar no mercado de trading.</p>
+      <p class="texto-p3" style="width: 183px; height: 37px; left: 298px; top: 238px; position: absolute; font-size: 20px; line-height: 100%; text-align: center; color: white;">Explico melhor.</p>
+      <p class="texto-p4" style="width: 768px; height: 148px; left: 1px; top: 310px; position: absolute; font-size: 20px; line-height: 100%; text-align: center; color: white;">Ser um trader é como ter uma profissão. Você precisa estudar<br/>a teoria e praticar os ensinamentos no campo de batalha.<br/>Assim como um engenheiro, médico ou dentista,<br/>você deve levar a sério a profissão de trader.</p>
+      <p class="texto-p5" style="width: 718px; height: 110px; left: 21px; top: 450px; position: absolute; font-size: 20px; line-height: 100%; text-align: center; color: white;">Tudo começa na Mentalidade. Se você não tem em mãos<br/>um planejamento para execultar as ações, tudo vira uma <br/>cortina de fumaça. </p>
+      <button class="div-text" style="width: 320px; border-color: transparent; height: 76px; left: 230px; top: 713px; position: absolute; background-color: rgba(30.46, 176.06, 228.44, 1); border-radius: 20px;">
+      <p class="texto-compra" style="width: 107.97px; height: 75.47px; left: -89px; top: 90px; position: absolute; font-size: 20px; font-weight: 600; line-height: 100%; text-align: center; text-transform: capitalize; color: #fff;">Compra<br/>Segura</p>
+      <p  class="texto-sati"style="width: 145.71px; height: 75.47px; left: 87px; top: 90px; position: absolute; font-size: 20px; font-weight: 600;line-height: 100%; text-align: center; color:#fff; text-transform: capitalize;">Satisfação<br/>Garantida</p>
+      <p  class="texto-contrato" style="width: 118.45px; height: 37.74px; left: 290px; top: 101px; position: absolute; font-size: 20px; font-weight: 600; line-height: 100%; color: white; text-transform: capitalize;">Contrato </p>
+      <p class="texto-quero"style="width: 292px; height: 50px; left: 17px; top: 5px; position: absolute; font-size: 20px; font-weight: 800; line-height: 100%; text-align: center; color: white; text-transform: uppercase;">Quero participar agora!</p>
+  </div>
+</div>
+
+
+<!-- INICIO SESSÃO ASSINATURA E FOTO -->
+
+<div style="width: 806px; height: 800px; position: relative; top: 900px; left: 100px;">
+  <img style="width: 437px; height: 437px; left: 54px; top: 89px; position: absolute; border-radius: 15px; border-style: solid; border-width: 4px; border-style: solid; border-color: rgba(0, 71, 255, 0.85);" src="/assets/img/Group 1.svg"/>
+  <p style="left: 716px; top: 50px; position: absolute; font-size: 36px; font-weight: 800; line-height: 100%; text-align: center; color: rgba(51, 190, 240, 1);">Especialista em Trading</p>
+  <p style="left: 642px; top: 178px; position: relative; font-size: 32px; font-weight: 500; line-height: 100%; text-align: center; color: white;">Um curso completo, te ensinando  a operar do básico ao avançado.<br/>Seja agora mesmo um trader <br/>profissional.</p>
+  <div style=" left: -50px; position: relative; width: 383px; height: 86px;top:-100px; padding-top: 21px; padding-bottom: 27px; padding-left: 47px; padding-right: 35px; left: 632px; top: 217px; background-color: rgba(10, 133, 217, 1); border-radius: 15px; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-end;">
+      <p style="font-size: 24px; font-weight: 800; line-height: 100%; left: -13px; position: relative; color: white;">Assine agora mesmo</p>
+  </div>
+  <img src="/assets/img/Pix 10801080_2 1.svg" style="position: relative; left: 780px; top: 230px; width: 90px;">
+</div>
+
+<!-- INICIO SESSÃO SER TRADER PROFISSINAL É: -->
+
+<div style="width: 3029px; left: -190px; height: 582px; top: 1300px; position: relative;">
+  <img style="width: 40px; position: absolute; height: 40px; left: 568px; top: 203px; border-radius: 8px;" src="/assets/img/icons8-checkmark 6.svg"/>
+  <p style="width: 447px; height: 50px; left: 24px; top: 0px; position: absolute; font-size: 36px; font-weight: 600; line-height: 100%; color: rgba(0, 187.54, 255, 1); text-transform: capitalize;">TRADER PROFISSIONAL É:</p>
+  <img style="width: 395px; height: 495px; left: 35px; top: 87px; position: absolute;" src="/assets/img/lumiere-graph-showing-financial-growth 1.svg"/>
+  <p style="left: 624px; top: 69px; width: 400px; position: relative; font-size: 20px; font-weight: 600; line-height: 100%; color: white;">Um acompanhamento sério, com embasamento profissional e prático.</p>
+  <p style="left: 624px; top: 187px; width: 400px; position: absolute; font-size: 20px; font-weight: 600; line-height: 100%; color: white;">Um ambiente de crescimento em <br/>conjunto onde te ajudo.</p>
+  <p style="left: 624px; top: 320px; width: 400px; position: absolute; font-size: 20px; font-weight: 600; line-height: 100%; color: white;">Um centro de informações privilegiadas <br/>sobre operações de trading.</p>
+  <p style="left: 624px; top: 453px; width: 400px; position: absolute; font-size: 20px; font-weight: 600; line-height: 100%; color: white;">Um local para você tirar as suas dúvidas <br/>com um mentos que opera todos os dias.</p>
+  <img style="width: 40px; height: 40px; left: 568px; top: 85px; position: absolute; border-radius: 8px;" src="/assets/img/icons8-checkmark 6.svg"/>
+  <img style="width: 40px; height: 40px; left: 568px; top: 336px; position: absolute; border-radius: 8px;" src="/assets/img/icons8-checkmark 6.svg"/>
+  <img style="width: 40px; height: 40px; left: 568px; top: 469px; position: absolute; border-radius: 8px;" src="/assets/img/icons8-checkmark 6.svg"/>
+</div>
+
+
+
+
+</body>
+</html>
